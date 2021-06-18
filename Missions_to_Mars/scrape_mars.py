@@ -79,5 +79,14 @@ def scrape():
 
     print(hemisphere_image_urls)
 
+    mars_dict={
+    "news_title":url_title,
+    "news_p":url_p,
+    "featured_image_url":img_path,
+    "fact_table":table,
+    "hemisphere_images":hemisphere_image_urls
+}
+
     browser.quit()
+    return mars_dict
     
